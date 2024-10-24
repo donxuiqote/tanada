@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>SMK Tanada</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link
+      href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Latest compiled and minified CSS -->
+  </head>
+
+  <body class="">
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="icons/tanada.png" class="logo" alt="Logo SMK TANADA" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Beranda</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Profil
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="visi-misi.html">Visi Misi</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="struktur-organisasi.html"
+                    >Struktur Organisasi</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="fasilitas.html">Fasilitas</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Kompetensi Keahlian
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="dkv.html"
+                    >Desain Komunikasi Visual</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="ulw.html"
+                    >Usaha Layanan Wisata</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="ekstra.html"
+                    >Ekstrakurikuler</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeri.html">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontak.html">Kontak</a>
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ppdb.html">PPDB</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="header-slider">
+      <div
+        id="schoolCarousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="galeri/galeri4.jpg"
+              class="d-block w-100"
+              alt="Gambar Slider 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="galeri/galeri5.jpg"
+              class="d-block w-100"
+              alt="Gambar Slider 2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="galeri/galeri2.jpg"
+              class="d-block w-100"
+              alt="Gambar Slider 2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="informasi/informasi6.jpg"
+              class="d-block w-100"
+              alt="Gambar Slider 2"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#schoolCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#schoolCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="">
+          <h2>Struktur Organisasi</h2>
+        </div>
+        <div class="row">
+          <div class="">
+            <img
+              src="foto/Pak Hammam.JPG"
+              alt="Hammam Labib S. P., S.Kom., M.Pd"
+              class="images-pendidik"
+            />
+            <h3 class="name">Hammam Labib S. P., S.Kom., M.Pd</h3>
+            <p>Kepala Sekolah</p>
+            <p>Projek Kreatif dan Kewirausahaan</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+            <img
+              src="foto/Pak Eko.jpeg"
+              alt="Eko Hari Widodo, S.Kom"
+              class="images-pendidik"
+            />
+            <h3 class="name">Eko Hari Widodo, S.Kom</h3>
+            <p>Wakil Kurikulum</p>
+            <p>Karya Desain, Komputer Grafis</p>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+            <img
+              src="foto/Pak Qolbi.jpeg"
+              alt="M. Masruri Qolbi, S.Pd"
+              class="images-pendidik"
+            />
+            <h3 class="name">M. Masruri Qolbi, S.Pd</h3>
+            <p>Wakil Kesiswaan</p>
+            <p>
+              Desain Brief, Prinsip Desain dan Komunikasi, Sketsa dan Ilustrasi,
+              Komposisi Typografi, Fotografi Dasar
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+            <img
+              src="foto/Pak Dirga.jpeg"
+              alt="Dirga Bagus Eko P., S.Pd"
+              class="images-pendidik"
+            />
+            <h3 class="name">Dirga Bagus Eko P., S.Pd</h3>
+            <p>Wakil Sarpras</p>
+            <p>Pendidikan Jasmani Olahraga & Kesehatan</p>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+            <img
+              src="foto/Bu Niswah.jpeg"
+              alt="Khoirotun Niswah, S.Psi"
+              class="images-pendidik"
+            />
+            <h3 class="name">Khoirotun Niswah, S.Psi</h3>
+            <p>BK</p>
+            <p>BK/BP</p>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+            <img
+              src="foto/Pak Anshori.jpeg"
+              alt="Akhmad Ansori, S.Pd"
+              class="images-pendidik"
+            />
+            <h3 class="name">Akhmad Ansori, S.Pd</h3>
+            <p>Wali Kelas</p>
+            <p>Bahasa Inggris</p>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+            <img
+              src="foto/Bu Rini.jpeg"
+              alt="Herdarini Sri Wirdariningsih., S.Pd"
+              class="images-pendidik"
+            />
+            <h3 class="name">Herdarini Sri Wirdariningsih., S.Pd</h3>
+            <p>Wali Kelas</p>
+            <p>Matematika</p>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+            <img
+              src="foto/Bu Sifa.jpeg"
+              alt="Assifatul Mubarroh, S.Hum"
+              class="images-pendidik"
+            />
+            <h3 class="name">Assifatul Mubarroh, S.Hum</h3>
+            <p>Wali Kelas</p>
+            <p>BTQ</p>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+            <img
+              src="icons/user-solid.svg"
+              alt="Nurul Huda, S.Pd.I., M.Pd"
+              class="images-pendidik"
+            />
+            <h3 class="name">Nurul Huda, S.Pd.I., M.Pd</h3>
+            <p>Wali Kelas</p>
+            <p>Pendidikan Agama Islam</p>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+            <img
+              src="foto/Pak Ulum.jpeg"
+              alt="M. Syaiful Ulum, S.Pd"
+              class="images-pendidik"
+            />
+            <h3 class="name">M. Syaiful Ulum, S.Pd</h3>
+            <p>Wali Kelas</p>
+            <p>
+              Informatika, Proses Produksi Desain, DMI, Projek Kreatif dan
+              Kewirausahaan
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+            <img
+              src="foto/Bu Indah.jpeg"
+              alt="Indah Zumaroh, S.Sos., S.Tr.Par"
+              class="images-pendidik"
+            />
+            <h3 class="name">Indah Zumaroh, S.Sos., S.Tr.Par</h3>
+            <p>Wali Kelas</p>
+            <p>
+              Mapel Pilihan, PPPW, PPTP, PW, MICE, PBIP K3LH, KKP & KLS, PKP,
+              KT, PABBT
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+            <img
+              src="foto/Bu Eny.jpg"
+              alt="Nur Eniyah, S.Pd"
+              class="images-pendidik"
+            />
+            <h3 class="name">Nur Eniyah, S.Pd</h3>
+            <p>Wali Kelas</p>
+            <p>Bahasa Indonesia</p>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+            <img
+              src="foto/Pak Shodiq.jpeg"
+              alt="Drs. A. Shodiq Zubaidi"
+              class="images-pendidik"
+            />
+            <h3 class="name">Drs. A. Shodiq Zubaidi</h3>
+            <p>Guru</p>
+            <p>Pendidikan Agama Islam</p>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+            <img
+              src="foto/Pak Latif.jpeg"
+              alt="Latiful Asir, S.Pd.I"
+              class="images-pendidik"
+            />
+            <h3 class="name">Latiful Asir, S.Pd.I</h3>
+            <p>Guru</p>
+            <p>Pendidikan Pancasila</p>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+            <img
+              src="foto/Pak Usman.jpeg"
+              alt="Usman, S.Ag., S.Kom"
+              class="images-pendidik"
+            />
+            <h3 class="name">Usman, S.Ag., S.Kom</h3>
+            <p>Guru</p>
+            <p>Desain Media Interaktif, K3LH, Technopreneur</p>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+            <img
+              src="foto/Bu Debby.jpeg"
+              alt="Debby Affita Dian A., S.Pd"
+              class="images-pendidik"
+            />
+            <h3 class="name">Debby Affita Dian A., S.Pd</h3>
+            <p>Guru</p>
+            <p>Sejarah</p>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+            <img
+              src="foto/Bu Tuha.jpeg"
+              alt="Maftuhah, S.Pd.I"
+              class="images-pendidik"
+            />
+            <h3 class="name">Maftuhah, S.Pd.I</h3>
+            <p>Guru</p>
+            <p>Seni Budaya, Pendidikan Aswaja</p>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12 ">
+            <img
+              src="foto/Bu Elok.jpg"
+              alt="Elok Sofiyah, S.Tr.K.M"
+              class="images-pendidik"
+            />
+            <h3 class="name">Elok Sofiyah, S.Tr.K.M</h3>
+            <p>Guru</p>
+            <p>Desain Brief, Perangkat Lunak Desain</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-footer">
+      <div class="">
+        <div class="row g-0 footer">
+          <div class="col-md-4 foo-kiri">
+            <div class="footer-contact">
+              <h3>SMK TANADA</h3>
+              <h4>Alamat</h4>
+              <p>Jl. Wadungasri dalam No. 24 Waru Sidoarjo</p>
+              <h4>Jam Kerja</h4>
+              <p><strong>Senin - Kamis</strong> : 07.00 - 14-00</p>
+              <p><strong>Jumat</strong> : 07.00 - 10-00</p>
+              <h4>Kontak</h4>
+              <p>(031)8674429 | email@google.com</p>
+            </div>
+            <div class="social-icons">
+              <a
+                href="https://www.instagram.com/esemkatanadaofficial/"
+                target="_blank"
+                ><i class="fab fa-instagram fa-2x"></i
+              ></a>
+              <a href="https://youtube.com" target="_blank"
+                ><i class="fab fa-youtube fa-2x"></i
+              ></a>
+              <a href="https://facebook.com" target="_blank"
+                ><i class="fab fa-facebook fa-2x"></i
+              ></a>
+              <a href="mailto:info@sekolah.com"
+                ><i class="fas fa-envelope fa-2x"></i
+              ></a>
+            </div>
+            <div class="container pt-5 ">
+              <p>&copy; 2024 SMK TANADA.</p>
+            </div>
+          </div>
+          <div class="col-md-8 foo-kanan">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.1090937568247!2d112.7617596750004!3d-7.341644592666952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fad5dfbf1d15%3A0x4afa1a07cb929204!2sSMK%20TANADA!5e0!3m2!1sid!2sid!4v1725341436351!5m2!1sid!2sid"
+                style="border: 0; border-radius: 8px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
